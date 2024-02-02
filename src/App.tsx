@@ -1,6 +1,9 @@
-
+// component
+import Banner from "./components/Banner"
 export default function App() {
   return (
-    <div>App</div>
+    <>
+    <Banner/>
+    </>
   )
 }
