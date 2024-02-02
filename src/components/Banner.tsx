@@ -14,8 +14,8 @@ import styles from "../styles/banner.module.css";
 const Banner = () => {
   return (
     <div className={styles.container}>
-        <h1>We make crypto clear and simple</h1>
-        <p>Buy, sell, and grow your crypto with CoinFlip, the platform dedicated to every trader at every level.</p>
+        <h1>We make crypto<br/>clear and simple</h1>
+        <p>Buy, sell, and grow your crypto with CoinFlip, the platform dedicated<br/> to every trader at every level.</p>
         <button className={styles.btn}>Get Started</button>
         <div className={styles.imageContainer}>
            <img className={styles.coin} src={bitcoinImg} alt="coinImg" />
@@ -26,6 +26,8 @@ const Banner = () => {
            <img className={styles.coin} src={star2Img} alt="coinImg" />
            <img className={styles.coin} src={star3Img} alt="coinImg" />
            <img className={styles.coin} src={star4Img} alt="coinImg" />
+           <div className={styles.circleOne}></div>
+           <div className={styles.circleTwo}></div>
         </div>
     </div>
   )
