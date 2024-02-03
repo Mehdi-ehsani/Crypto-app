@@ -16,11 +16,14 @@ export default function App() {
       )
     } else {
       return (
+        <>
+        <Banner/>
         <ul>
           {data.map(item => (
             <li key={item.id}>{item.name} - {item.current_price}</li>
           ))}
         </ul>
+        </>
       )
     }
 
