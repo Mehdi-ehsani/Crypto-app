@@ -1,4 +1,5 @@
-
+// component
+import Banner from "./components/Banner"
 import { useDataContext } from '../src/context'
 
 export default function App() {
@@ -25,8 +26,6 @@ export default function App() {
 
   }
   return (
-    <div>
-      <RenderContent />
-    </div>
+    <div>App</div>
   )
 }
