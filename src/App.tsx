@@ -4,12 +4,9 @@ import { useDataContext } from '../src/context'
 import { Link } from "react-router-dom"
 
 export default function App() {
-  const { data, error, loading } = useDataContext()
+  const { data, loading } = useDataContext()
 
   function RenderContent() {
-    if (error) {
-      console.log(error)
-    }
     if (loading) {
       return (
         <h3>loading...</h3>
