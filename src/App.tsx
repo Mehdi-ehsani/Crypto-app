@@ -1,7 +1,9 @@
 // component
 import Banner from "./components/Banner"
+import Cards from "./components/Cards"
 import { useDataContext } from '../src/context'
 import { Link } from "react-router-dom"
+import Loading from "./components/Loading"
 
 export default function App() {
   const { data, loading } = useDataContext()
@@ -9,19 +11,16 @@ export default function App() {
   function RenderContent() {
     if (loading) {
       return (
-        <h3>loading...</h3>
+        <Loading />
       )
     } else {
       return (
         <>
           <Banner />
+          <Cards />
           <h3><Link to="/products">products</Link></h3>
-          <ul>
-            {data.map(item => (
-              <li key={item.id}>{item.name} - {item.current_price}</li>
-            ))}
-          </ul>
-          
+         
+
         </>
       )
     }
