@@ -3,6 +3,7 @@
 	position: relative;
 	width: 100vw;
 	height: 800px;
+	overflow-x: hidden;
 }
 .textContainer {
 	z-index: 3;
