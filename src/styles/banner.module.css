@@ -1,8 +1,12 @@
 .container {
-	/* background: #0b0b0f; */
 	position: relative;
-	width: 100vw;
-	height: 800px;
+	width: 100%;
+	height: 900px;
+	overflow-x: hidden;
+	
+}
+.container::-webkit-scrollbar {
+	display: none;
 }
 .textContainer {
 	z-index: 3;
@@ -52,7 +56,6 @@
 	width: 100%;
 	height: 100%;
 	pointer-events: none;
-	/* overflow: hidden; */
 }
 .imageContainer::after {
 	content: "";
@@ -231,6 +234,9 @@
 	.circleOne {
 		left: 140px;
 	}
+	.container img:nth-child(3) {
+		bottom: 150px;
+	}
 	.container img:nth-child(4) {
 		display: none;
 	}
@@ -248,6 +254,28 @@
     .container {
         height: 300px;
     }
+	.imageContainer::after {
+		content: "";
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background: radial-gradient(#02a496 30%, #0b0b0f);
+		opacity: 40%;
+		filter: blur(50px);
+	}
+	.imageContainer::before {
+		content: "";
+		position: absolute;
+		right: 0;
+		top: 100px;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background: radial-gradient(#5300b9 30%, #0b0b0f);
+		opacity: 40%;
+		filter: blur(50px);
+	}
 	.textContainer {
 		width: 100%;
 	}
@@ -286,5 +314,8 @@
     .container img:nth-child(2) {
         right: 20px;
         top: 20px;
+    }
+	.container img:nth-child(3) {
+       display: none;
     }
 }
