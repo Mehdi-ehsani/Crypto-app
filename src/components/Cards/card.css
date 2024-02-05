@@ -1,9 +1,12 @@
+.card-wrapper{
+    flex-wrap: wrap;
+}
 .card{
     border: 2px solid white;
     background-color: burlywood;
     border-radius: 13px;
     background-color: rgba(26, 27, 35, 1);
-    max-width: 400px;
+    max-width: 360px;
     /* margin-top: auto; */
 }
 .card-link__wrapper * {
