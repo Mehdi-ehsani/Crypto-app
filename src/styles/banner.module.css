@@ -2,11 +2,8 @@
 	position: relative;
 	width: 100%;
 	height: 900px;
-	overflow-x: hidden;
+	overflow: hidden;
 	
-}
-.container::-webkit-scrollbar {
-	display: none;
 }
 .textContainer {
 	z-index: 3;
@@ -283,10 +280,13 @@
 		font-size: 1.8rem;
 		line-height: 2.2rem;
 		margin-bottom: 20px;
+		text-shadow: 2px 2px 9px #0b0b0f;
 	}
 	.textContainer p {
+		color: #8f93b4;
 		font-size: 0.6rem;
 		line-height: 0.7rem;
+		text-shadow: 2px 2px 9px #0b0b0f;
 	}
 	.btn {
 		width: 100px;
@@ -299,23 +299,28 @@
 		top: 30%;
 	}
 	.circleTwo {
-		top: 60%;
-        right: -50%;
+		display: none;
 	}
 	.lineOne,
 	.lineTwo,
 	.lineThree {
 		left: -50%;
 	}
+	.container img:nth-child(1) {
+		width: 80px;
+	}
 	.container img:nth-child(4) {
+		width: 80px;
 		bottom: 170px;
 		left: 10px;
 	}
     .container img:nth-child(2) {
+		width: 80px;
         right: 20px;
         top: 20px;
     }
 	.container img:nth-child(3) {
+		width: 80px;
        display: none;
     }
 }
