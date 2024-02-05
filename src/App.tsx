@@ -19,7 +19,7 @@ export default function App() {
           <Banner />
           <Cards />
           <h3><Link to="/products">products</Link></h3>
-          <button onClick={() => setTheme()}>{isDark ? "darkMode" : "liteMode" }</button>
+          <button onClick={() => setTheme()}>{isDark ? "liteMode" : "darkMode" }</button>
           {console.log(isDark)}
         </>
       )
