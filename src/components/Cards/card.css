@@ -3,4 +3,19 @@
     background-color: burlywood;
     border-radius: 13px;
     background-color: rgba(26, 27, 35, 1);
+    max-width: 400px;
+    /* margin-top: auto; */
+}
+.card-link__wrapper * {
+    color: rgba(185, 130, 255, 1);
+}
+.card-link__wrapper .card-arrow-icon{
+    transform: translate(0px, 0px);
+    transition: 0.5s;
+}
+.card-link__wrapper:hover .card-arrow-icon{
+    transform: translate(5px, 0px);
+}
+.card img{
+    margin: 10px auto
 }

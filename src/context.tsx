@@ -23,7 +23,7 @@ export function CryptoDataContextProvider({ children }: CryptoDataContextProvide
     const [axiosData, axiosError, axiosLoading] = useAxios({ url: baseUrl })
     const data = Array.isArray(axiosData) ? axiosData : [];
     const error = axiosError as string || null;
-    const loading = axiosLoading as boolean || false;
+    const loading = axiosLoading as boolean;
 
     return (
         <CryptoDataContext.Provider value={{data,error,loading}}>
