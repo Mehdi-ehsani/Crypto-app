@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 import Loading from "./components/Loading"
 
 export default function App() {
-  const { data, loading } = useDataContext()
+  const { data, loading , isDark , setTheme } = useDataContext()
 
   function RenderContent() {
     if (loading) {
@@ -19,8 +19,8 @@ export default function App() {
           <Banner />
           <Cards />
           <h3><Link to="/products">products</Link></h3>
-         
-
+          <button onClick={() => setTheme()}>{isDark ? "darkMode" : "liteMode" }</button>
+          {console.log(isDark)}
         </>
       )
     }

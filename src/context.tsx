@@ -1,5 +1,5 @@
 
-import { createContext, ReactNode } from "react";
+import { createContext, ReactNode, useState } from "react";
 import { useAxios } from './hooks/useAxios';
 import { useContext } from "react";
 
@@ -10,6 +10,8 @@ export type DataContextProps = {
     data: any[];
     loading: boolean;
     error: string | null;
+    isDark: boolean;
+    setTheme: any;
 }
 
 type CryptoDataContextProviderProps = {
@@ -20,13 +22,19 @@ const CryptoDataContext = createContext<DataContextProps | undefined>(undefined)
 
 export function CryptoDataContextProvider({ children }: CryptoDataContextProviderProps) {
 
+    const setTheme = () => {
+       setIsDark(!isDark)
+    }
+    const [isDark , setIsDark] = useState<boolean>(false)
     const [axiosData, axiosError, axiosLoading] = useAxios({ url: baseUrl })
     const data = Array.isArray(axiosData) ? axiosData : [];
     const error = axiosError as string || null;
     const loading = axiosLoading as boolean;
 
+
+
     return (
-        <CryptoDataContext.Provider value={{data,error,loading}}>
+        <CryptoDataContext.Provider value={{data,error,loading,isDark,setTheme}}>
             {children}
         </CryptoDataContext.Provider>
     )
