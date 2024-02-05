@@ -5,6 +5,12 @@
 	overflow: hidden;
 	
 }
+.container.lite {
+	background: var(--lite-bg-color);
+}
+.container.lite .textContainer h1 {
+   color: var(--dark-text-color);
+}
 .textContainer {
 	z-index: 3;
 	position: absolute;

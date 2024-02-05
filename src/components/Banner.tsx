@@ -1,3 +1,4 @@
+import { useDataContext } from '../context'
 // image
 import bitcoinImg from "../assets/Bitcoin.png";
 import etheriumImg from "../assets/Etherium.png";
@@ -12,8 +13,9 @@ import star4Img from "../assets/star-img-4.png";
 import styles from "../styles/banner.module.css";
 
 const Banner = () => {
+	const { isDark } = useDataContext()
 	return (
-		<div className={styles.container}>
+		<div className={isDark ? styles.container : `${styles.container} ${styles.lite}`}>
 			<div className={styles.textContainer}>
 				<h1>
 					We make crypto
