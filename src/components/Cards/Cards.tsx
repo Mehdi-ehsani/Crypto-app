@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 import cardImg1 from '../../assets/image/card 1.png'
 import cardImg2 from '../../assets/image/card 2.png'
 import cardImg3 from '../../assets/image/card 3.png'
-// import '../../src/styles/cards.module.css'
+
 
 export default function Cards() {
     return (
@@ -12,7 +12,7 @@ export default function Cards() {
                 <div className="card text-center pb-4 pr-4 pl-4">
                     <img src={cardImg1} alt="card-img" />
                     <h1 className="text-3xl font-bold mt-5 mb-4">Trade Desk</h1>
-                    <p className="text-slate-400 mt-4 mb-4">Invest in crypto anytime, anywhere with our safe, secure, and easy to use online platform</p>
+                    <p className="text-slate-400 mt-4 mb-4">Invest in crypto anytime, anywhere with our safe, secure, and easy to use online platform and me change the text</p>
                     <div className="card-link__wrapper flex items-center justify-center">
                         <a className="card-link mr-3" href="#">
                             Get Started

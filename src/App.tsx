@@ -7,6 +7,7 @@ import Loading from "./components/Loading"
 
 export default function App() {
   const { data, loading , isDark , setTheme } = useDataContext()
+  isDark ? document.body.classList.remove("lite") : document.body.classList.add("lite")
 
   function RenderContent() {
     if (loading) {
