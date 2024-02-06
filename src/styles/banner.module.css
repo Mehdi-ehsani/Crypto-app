@@ -1,10 +1,4 @@
-.bodyLight {
-	background-color: var(--lite-bg-color);
-}
 
-.bodyDark {
-	background-color: var(--dark-bg-color);
-}
 
 .container {
 	position: relative;
