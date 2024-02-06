@@ -38,11 +38,26 @@
 body {
     background: var(--dark-bg-color);
 }
+<<<<<<< HEAD
 body.lite {
     background: var(--lite-bg-color);
 }
 
+=======
+.bodyLight {
+	background-color: var(--lite-bg-color);
+}
+>>>>>>> afa3f24752c2c322ba52e9fe1cd0ae7d1dc53e2b
 
+.bodyDark {
+	background-color: var(--dark-bg-color);
+}
+.textLight{
+    color: var(--dark-text-color);
+}
+.textDark{
+    color: var(--lite-text-color);
+}
 .animate-spin {
     animation: spin 1s linear infinite;
 }
