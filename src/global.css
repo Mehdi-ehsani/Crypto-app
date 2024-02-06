@@ -33,6 +33,12 @@ body {
 .bodyDark {
 	background-color: var(--dark-bg-color);
 }
+.textLight{
+    color: var(--dark-text-color);
+}
+.textDark{
+    color: var(--lite-text-color);
+}
 .animate-spin {
     animation: spin 1s linear infinite;
 }

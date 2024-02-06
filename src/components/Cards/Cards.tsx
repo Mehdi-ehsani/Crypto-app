@@ -11,7 +11,7 @@ export default function Cards() {
 
     return (
         <div className={isDark?"bodyDark":"bodyLight"}>
-            <div className={isDark ? "bodyDark container mx-auto" : "bodyLight container mx-auto pt-10 pb-10"}>
+            <div className={isDark ? "bodyDark container mx-auto pt-10 pb-10" : "bodyLight container mx-auto pt-10 pb-10"}>
                 <div className='card-wrapper flex flex-col md:flex-row items-center justify-center gap-8 px-4 md:px-1'>
                     <div className={isDark ? "cardDark card  text-center pb-4 pr-4 pl-4" : "cardLight card  text-center pb-4 pr-4 pl-4"}>
                         <img src={cardImg1} alt="card-img" />
