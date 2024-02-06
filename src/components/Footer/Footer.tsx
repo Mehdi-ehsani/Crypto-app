@@ -2,33 +2,58 @@ import TextField from '@mui/material/TextField';
 import "./Footer.css"
 import { useDataContext } from '../../context';
 
+
+
 export default function Footer() {
     const { isDark } = useDataContext()
+
     return (
-        <div className={isDark?"bodyDark container mx-auto":"bodyLight container mx-auto"}>
-            <div className='footer md:grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
-                <ul className={isDark?"textDark footerBackground text-center":"textLight footerBackground text-center"}>
-                    {/* <li className='footer-title'><img className='footer-logo' src={logo} alt="logo" /></li> */}
-                    <li className="footer-item">Dhaka, Bangladesh</li>
-                    <li className="footer-item">0943833399</li>
-                    <li className="footer-item">support@proxylab.com</li>
-                </ul>
-                <ul className={isDark?"textDark text-center":"textLight text-center"}>
-                    <li className='footer-title'>Our Social Media</li>
-                    <li className="footer-item">Dribbble</li>
-                    <li className="footer-item">Behance</li>
-                    <li className="footer-item">Medium</li>
-                    <li className="footer-item">Instagram</li>
-                    <li className="footer-item">Facebook</li>
-                    <li className="footer-item">Twitter</li>
-                </ul>
-                <div className='grid gap-y-4 col-span-2 lg:col-auto lg:text-left  text-center'>
-                    <a className={isDark?"textDark footer-title text-center":"textLight footer-title text-center"}>Join a Newsletter</a>
-                    <div className='text-center'>
-                        <p className={isDark?"textDark text-center":"textLight text-center"} style={{ marginBottom: "0.5rem" }}>Your Email</p>
-                        <TextField id="outlined-basic" label="Email" variant="outlined" />
+        <div className={isDark ? "bodyDark" : "bodyLight"}>
+            <div className={isDark ? "bodyDark container mx-auto" : "bodyLight container mx-auto"}>
+                <div className='footer md:grid md:grid-cols-1 lg:grid-cols-3 gap-4'>
+                    <div className={isDark ? " footerBackground text-left" : " footerBackground text-left"}>
+                        <h1 className={isDark ? "textDark mb-3" : "textLight mb-3"}>COINFLIP</h1>
+                        <p className={isDark ? "textDark" : "textLight"}>CoinFlip, the world’s leading bitcoin ATM operator, makes it so flippin’ easy to buy and sell bitcoin via cash, card, or bank transfer.</p>
+                        <div className={isDark ? "email-input-wrapper textDark mt-5 mb-2" : "email-input-wrapper textLight mt-5 mb-2"}>
+                            {/* <p className={isDark ? "textDark" : "textLight"} style={{ marginBottom: "0.5rem" }}>Your Email</p> */}
+                            <TextField
+                                id="outlined-basic"
+                                label="Email"
+                                variant="outlined"
+                                color={isDark ? "warning" : "primary"}
+                                InputLabelProps={{
+                                    style: {
+                                        color: isDark ? '#ccc' : '#000', // Label text color based on dark mode
+                                    },
+                                }}
+                                InputProps={{
+                                    style: {
+                                        borderColor: isDark ? '#white' : '#ccc',
+                                        color: isDark ? '#ccc' : '#000', // Placeholder text color based on dark mode
+                                    },
+                                    placeholder: 'Enter your email', // Placeholder text
+                                }}
+                            />
+                        </div>
+                        <p className={isDark ? "textDark mt-5" : "textLight mt-5"} >Sign up to get the latest in CoinFlip news, discounts, and more.</p>
+                        <p className={isDark ? "textDark mt-2" : "textLight mt-2"}>© 2021 GPD Holdings, LLC FinCEN MSB</p>
                     </div>
-                    <div className=' text-center' style={{ marginTop: "0.5rem" }}><a className={isDark?"textDark main-btn header-btn p-2":"textLight main-btn header-btn p-2"} href="#">Subscribe</a></div>
+                    <ul className={isDark ? "textDark lg:text-center" : "textLight lg:text-center"}>
+                        <li className='footer-title'>Company</li>
+                        <li className="footer-item">About</li>
+                        <li className="footer-item">Careers</li>
+                        <li className="footer-item">Press</li>
+                        <li className="footer-item">News</li>
+                        <li className="footer-item">Merch</li>
+                    </ul>
+                    <ul className={isDark ? "textDark" : "textLight"}>
+                        <li className='footer-title'>Privacy Policy and Terms of Service</li>
+                        <li className="footer-item">CoinFlip Privacy Policy</li>
+                        <li className="footer-item">CoinFlip Biometrics Privacy Policy</li>
+                        <li className="footer-item">CoinFlip Financial Privacy Notice</li>
+                        <li className="footer-item">CoinFlip Terms of Service</li>
+                        <li className="footer-item">CoinFlip Trade Desk Terms of Service</li>
+                    </ul>
                 </div>
             </div>
         </div>
