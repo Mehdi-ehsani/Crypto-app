@@ -22,12 +22,12 @@ export default function Footer() {
                                 color={isDark ? "warning" : "primary"}
                                 InputLabelProps={{
                                     style: {
-                                        color: isDark ? '#ccc' : '#000', // Label text color based on dark mode
+                                        color: isDark ? '#ccc' : '#000', // Label text color based on dark mode   
                                     },
                                 }}
                                 InputProps={{
                                     style: {
-                                        borderColor: isDark ? '#white' : '#ccc',
+                                        borderColor: isDark ? '#fff' : '#ccc',
                                         color: isDark ? '#ccc' : '#000', // Placeholder text color based on dark mode
                                     },
                                     placeholder: 'Enter your email', // Placeholder text
