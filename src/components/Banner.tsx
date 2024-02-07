@@ -1,13 +1,13 @@
 import { useDataContext } from '../context'
 // image
-import bitcoinImg from "../assets/Bitcoin.png";
-import etheriumImg from "../assets/Etherium.png";
-import liteCoinImg from "../assets/LiteCoin.png";
-import moneroImg from "../assets/Monero.png";
-import star1Img from "../assets/star-img-1.png";
-import star2Img from "../assets/star-img-2.png";
-import star3Img from "../assets/star-img-3.png";
-import star4Img from "../assets/star-img-4.png";
+import bitcoinImg from "../assets/image/Bitcoin.png";
+import etheriumImg from "../assets/image/Etherium.png";
+import liteCoinImg from "../assets/image/LiteCoin.png";
+import moneroImg from "../assets/image/Monero.png";
+import star1Img from "../assets/image/star-img-1.png";
+import star2Img from "../assets/image/star-img-2.png";
+import star3Img from "../assets/image/star-img-3.png";
+import star4Img from "../assets/image/star-img-4.png";
 
 // css
 import styles from "../styles/banner.module.css";

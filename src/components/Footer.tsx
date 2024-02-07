@@ -1,6 +1,6 @@
 import TextField from '@mui/material/TextField';
-import "./Footer.css"
-import { useDataContext } from '../../context';
+import "../global.css"
+import { useDataContext } from '../context';
 
 
 
@@ -15,7 +15,6 @@ export default function Footer() {
                         <h1 className={isDark ? "textDark mb-3" : "textLight mb-3"}>COINFLIP</h1>
                         <p className={isDark ? "textDark" : "textLight"}>CoinFlip, the world’s leading bitcoin ATM operator, makes it so flippin’ easy to buy and sell bitcoin via cash, card, or bank transfer.</p>
                         <div className={isDark ? "email-input-wrapper textDark mt-5 mb-2" : "email-input-wrapper textLight mt-5 mb-2"}>
-                            {/* <p className={isDark ? "textDark" : "textLight"} style={{ marginBottom: "0.5rem" }}>Your Email</p> */}
                             <TextField
                                 id="outlined-basic"
                                 label="Email"

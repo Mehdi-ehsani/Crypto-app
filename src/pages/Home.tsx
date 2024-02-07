@@ -1,7 +1,15 @@
+import Banner from "../components/Banner";
+import Cards from "../components/Cards";
+import Footer from "../components/Footer";
 
-
-export default function Home() {
+const Home = () => {
   return (
-    <div>Home</div>
+    <>
+     <Banner/>
+     <Cards/>
+     <Footer/>
+    </>
   )
 }
+
+export default Home

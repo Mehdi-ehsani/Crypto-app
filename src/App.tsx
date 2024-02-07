@@ -1,11 +1,11 @@
 // component
-import Banner from "./components/Banner"
-import Cards from "./components/Cards/Cards"
+import Home from './pages/Home';
+// context
 import { useDataContext } from '../src/context'
-import { Link } from "react-router-dom"
-// import Loading from "./components/Loading"
+// loading
 import CircularProgress from '@mui/material/CircularProgress';
-import Footer from "./components/Footer/Footer";
+
+import { Link } from "react-router-dom"
 
 export default function App() {
   const { data, loading , isDark , setTheme } = useDataContext()
@@ -21,9 +21,7 @@ export default function App() {
     } else {
       return (
         <>
-          <Banner />
-          <Cards />
-          <Footer />
+          <Home/>
           <h3><Link to="/products">products</Link></h3>
           <button onClick={() => setTheme()}>{isDark ? "liteMode" : "darkMode" }</button>
           {console.log(isDark)}
