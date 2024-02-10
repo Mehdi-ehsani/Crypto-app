@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Info from "../components/Info";
 import Support from "../components/Support";
 import FirstStep from "../components/FirstStep";
+import ReceiveMail from "../components/ReceiveMail";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
      <Info/>
      <Support/>
      <FirstStep/>
+     <ReceiveMail/>
      <Footer/>
     </>
   )
