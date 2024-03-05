@@ -9,11 +9,11 @@ const Info = () => {
 			<h1
 				className={
 					isDark
-						? "text-xl lite-mode-text font-extrabold mb-6  text-center sm:text-4xl"
-						: "text-xl dark-mode-text font-extrabold mb-6 text-center sm:text-4xl"
+						? "text-xl lite-mode-text font-extrabold mb-6  text-center sm:text-6xl sm:w-2/3 sm:mt-10 "
+						: "text-xl dark-mode-text font-extrabold mb-6 text-center sm:text-6xl sm:w-2/3 sm:mt-10 "
 				}
 			>
-				A crypto investment platform that invests in you{" "}
+				A crypto investment platform that invests in you
 			</h1>
 			<p
 				className={

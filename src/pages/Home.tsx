@@ -5,6 +5,7 @@ import Info from "../components/Info";
 import Support from "../components/Support";
 import FirstStep from "../components/FirstStep";
 import ReceiveMail from "../components/ReceiveMail";
+import CoinContainer from "../components/CoinContainer";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
      <Cards/>
      <Info/>
      <Support/>
+     <CoinContainer/>
      <FirstStep/>
      <ReceiveMail/>
      <Footer/>
